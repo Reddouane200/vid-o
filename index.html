@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<h3 class="heading">videos</h3>
+<div class="container">
+    <div class="main-video">
+        <div class="video active">
+            <video src="4.mp4" controls muted autoplay></video>
+            <h3 class="title">vidoe1</h3>
+            <h2>Comments</h2>
+            <!-- ort comment  -->
+            <form id="commentForm">
+                <label for="comment">schreib bitte :</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+            
+                <button type="submit">senden</button>
+            </form>
+
+            <div class="kolo">
+            <!-- lke  -->
+        <button onclick="likeVideo()">like</button>
+        <!--   dislike -->
+        <button onclick="dislikeVideo()">dislike</button>
+    </div>
+        <!--   wie vile   -->
+        <div id="likes">0</div>
+        <!--   wie vile      -->
+        <div id="dislikes">0</div>
+        
+        </div>
+    </div>
+    <div class="vdeo-list">
+        <div class="vid active">
+            <video src="1.mp4" controls muted autoplay></video>
+            <h3 class="titel">videos2</h3>
+        </div>
+        <div class="vid">
+            <video src="2.mp4" controls muted autoplay></video>
+            <h3 class="titel">videos3</h3>
+        </div>
+        <div class="vid">
+            <video src="3.mp4" controls muted autoplay></video>
+            <h3 class="titel">videos4</h3>
+        </div>
+    </div>
+   
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
